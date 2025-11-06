@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El Tenis: Historia, Reglas y Grandes Campeones</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6f0ff;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+        nav {
+            background-color: #003366;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #cce0ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        /* Botones nuevos */
+        nav a.extra {
+            background-color: #66b3ff;
+            color: #003366;
+        }
+        nav a.extra:hover {
+            background-color: #99ccff;
+            color: #001a33;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px 50px 15px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            border-bottom: 3px solid #004080;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 30px;
+            font-size: 1.1rem;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9rem;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 10px; }
+            header h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+        }
+
+        /* Sopa de letras */
+        #wordsearch table { border-collapse: collapse; margin: 10px auto; }
+        #wordsearch td {
+            width: 35px; height: 35px; border: 1px solid #333;
+            text-align: center; font-weight: bold; font-size: 20px;
+            cursor: pointer; background: #fff; transition: 0.3s;
+        }
+        #wordsearch td.selected { background: #a2d5f2; }
+        #wordsearch td.found { background: #2c7bbf; color: #fff; }
+        #wordlist { list-style: none; text-align: center; font-size: 1.1rem; padding: 0; }
+        #wordlist li.found { text-decoration: line-through; color: #2c7bbf; }
+
+        /* Formulario */
+        form {
+            max-width: 450px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: auto;
+        }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select {
+            width: 100%; padding: 8px; margin-top: 5px;
+            border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px; padding: 10px; width: 100%;
+            background-color: #4CAF50; color: white; border: none;
+            border-radius: 5px; font-size: 16px; cursor: pointer;
+        }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Tenis: Historia, Reglas y Grandes Campeones</h1>
+    </header>
+
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#torneos">Torneos</a>
+        <a href="#campeones">Campeones</a>
+        <a href="#sopa" class="extra">Sopa de Letras</a>
+        <a href="#formulario" class="extra">Formulario</a>
+    </nav>
+
+    <main>
+        <!-- CONTENIDO ORIGINAL COMPLETO -->
+        <section id="historia">
+            <h2>Historia del Tenis</h2>
+            <p>El tenis es un deporte con una larga historia que data del siglo XII en Francia, donde se jugaba un juego similar llamado "jeu de paume". Sin embargo, el tenis moderno comenzó a desarrollarse en Inglaterra en el siglo XIX, cuando el Major Walter Wingfield patentó un juego llamado "lawn tennis" en 1874.</p>
+            <p>Desde entonces, el tenis ha evolucionado hasta convertirse en uno de los deportes más populares a nivel mundial, con millones de jugadores y aficionados. Su expansión global se vio impulsada por la creación de torneos internacionales y la profesionalización del deporte.</p>
+            <img src="https://lazosdelagente.com/wp-content/uploads/2023/09/QUE-ES-EL-TENIS-Y-CUAL-ES-SU-IMPORTANCIA.png" />
+        </section>
+
+        <section id="reglas">
+            <h2>Reglas Básicas del Tenis</h2>
+            <p>El tenis puede jugarse en modalidad individual (uno contra uno) o dobles (dos contra dos). El objetivo es ganar puntos golpeando la pelota para que pase por encima de la red y caiga dentro del campo del adversario sin que este pueda devolverla correctamente.</p>
+            <ul>
+                <li>El partido se divide en sets, y cada set en juegos.</li>
+                <li>Para ganar un juego, un jugador debe ganar al menos cuatro puntos con dos de diferencia (puntos: 0, 15, 30, 40, ventaja).</li>
+                <li>Un set se gana al obtener seis juegos con una diferencia mínima de dos juegos. En algunos casos se juega un desempate o "tie-break".</li>
+                <li>El saque debe realizarse desde detrás de la línea de fondo y alternarse entre los jugadores.</li>
+                <li>La pelota puede botar solo una vez en el campo antes de ser devuelta.</li>
+            </ul>
+            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw075d31e4/images/page-designer/2025/September/NB6274_Comp_A_Mobile.jpg" />
+        </section>
+
+        <section id="torneos">
+            <h2>Los Torneos Más Importantes</h2>
+            <p>Los cuatro torneos de Grand Slam son los eventos más prestigiosos del calendario tenístico mundial. Son:</p>
+            <ul>
+                <li><strong>Abierto de Australia:</strong> Jugado en Melbourne sobre pista dura.</li>
+                <li><strong>Roland Garros:</strong> Celebrado en París sobre tierra batida.</li>
+                <li><strong>Wimbledon:</strong> Realizado en Londres sobre césped.</li>
+                <li><strong>Abierto de Estados Unidos:</strong> Se juega en Nueva York, también sobre pista dura.</li>
+            </ul>
+            <img src="https://indeportesantioquia.gov.co/wp-content/uploads/2020/05/Tenis-de-Campo-damas-1.jpg" />
+        </section>
+
+        <section id="campeones">
+            <h2>Grandes Campeones del Tenis</h2>
+            <p>El tenis ha tenido leyendas que marcaron la historia del deporte, tanto en la categoría masculina como femenina. Algunos de los más destacados son:</p>
+            <ul>
+                <li><strong>Roger Federer:</strong> Con 20 títulos de Grand Slam, es considerado uno de los mejores jugadores de todos los tiempos.</li>
+                <li><strong>Serena Williams:</strong> Con 23 títulos de Grand Slam, ha dominado el tenis femenino durante décadas.</li>
+                <li><strong>Rafael Nadal:</strong> Apodado "El Rey de la Tierra Batida" por sus múltiples títulos en Roland Garros.</li>
+                <li><strong>Steffi Graf:</strong> Ganadora de 22 Grand Slams y única en lograr el "Golden Slam" (los 4 Grand Slams y oro olímpico en un mismo año).</li>
+            </ul>
+            <img src="https://s1.significados.com/foto/jugador-tenis.jpg?class=article" />
+            <img src="https://tdsportswear.com/wp-content/uploads/2025/03/d73-1170x658.png" />
+        </section>
+
+        <!-- 🧩 Sopa de Letras -->
+        <section id="sopa">
+            <h2>Sopa de Letras - Tenis</h2>
+            <p>Encuentra las siguientes palabras relacionadas con el tenis:</p>
+            <ul id="wordlist"></ul>
+            <div id="wordsearch">
+                <table id="grid"></table>
+            </div>
+            <p id="msg" style="text-align:center;font-weight:bold;"></p>
+        </section>
+
+        <!-- 📝 Formulario -->
+        <section id="formulario">
+            <h2>Registro de Jugadores de Tenis</h2>
+            <form id="registro">
+                <label>Nombre completo:</label>
+                <input type="text" id="nombre" required>
+                <label>Correo electrónico:</label>
+                <input type="email" id="correo" required>
+                <label>Edad:</label>
+                <input type="number" id="edad" min="5" max="100" required>
+                <label>País:</label>
+                <input type="text" id="pais" required>
+                <label>Nivel de juego:</label>
+                <select id="nivel" required>
+                    <option value="">Seleccione</option>
+                    <option>Principiante</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                    <option>Profesional</option>
+                </select>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p id="resultado" style="text-align:center;font-weight:bold;margin-top:10px;"></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Sitio dedicado al tenis. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        // 🎾 SOPA DE LETRAS
+        const words = ["RAQUETA","CANCHA","PELOTA","RED","SAQUE","SET","MATCH","SERVICIO","REVES","ACE"];
+        const gridSize = 15;
+        let grid = Array.from({length:gridSize},()=>Array(gridSize).fill(''));
+
+        function randomLetter(){
+            return "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[Math.floor(Math.random()*26)];
+        }
+
+        function placeWord(word){
+            const dirs=[{x:1,y:0},{x:0,y:1},{x:1,y:1},{x:-1,y:1}];
+            let placed=false;
+            while(!placed){
+                const dir=dirs[Math.floor(Math.random()*dirs.length)];
+                const xS=Math.floor(Math.random()*gridSize);
+                const yS=Math.floor(Math.random()*gridSize);
+                let fits=true,x=xS,y=yS;
+                for(let i=0;i<word.length;i++){
+                    if(x<0||x>=gridSize||y<0||y>=gridSize||(grid[y][x]&&grid[y][x]!==word[i])){fits=false;break;}
+                    x+=dir.x;y+=dir.y;
+                }
+                if(fits){
+                    x=xS;y=yS;
+                    for(let i=0;i<word.length;i++){grid[y][x]=word[i];x+=dir.x;y+=dir.y;}
+                    placed=true;
+                }
+            }
+        }
+
+        words.forEach(placeWord);
+        for(let y=0;y<gridSize;y++)for(let x=0;x<gridSize;x++)if(!grid[y][x])grid[y][x]=randomLetter();
+
+        const gridEl=document.getElementById("grid");
+        for(let y=0;y<gridSize;y++){
+            const tr=document.createElement("tr");
+            for(let x=0;x<gridSize;x++){
+                const td=document.createElement("td");
+                td.textContent=grid[y][x];
+                tr.appendChild(td);
+            }
+            gridEl.appendChild(tr);
+        }
+
+        const listEl=document.getElementById("wordlist");
+        words.forEach(w=>{const li=document.createElement("li");li.textContent=w;listEl.appendChild(li);});
+
+        // 📝 FORMULARIO
+        document.getElementById("registro").addEventListener("submit",e=>{
+            e.preventDefault();
+            const nombre=document.getElementById("nombre").value;
+            document.getElementById("resultado").textContent=`✅ ${nombre} ha sido registrado exitosamente.`;
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
+
